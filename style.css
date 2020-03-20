@@ -96,11 +96,14 @@ header {
     }
 
     .nav-links {
-        height: 20vh;
-        min-height: 150px;
+        height: 150px;
         flex-direction: column;
         text-align: right;
         justify-content: space-between;
+    }
+
+    .nav-links a {
+        font-size: 18px;
     }
 
     .landing {
