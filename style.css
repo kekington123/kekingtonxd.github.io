@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: #111119;
+}
+
+header {
+    display: flex;
+    width: 60%;
+    margin: 50px;
+    align-items: center;
+    gap: 50px;
+}
+
+.logo {
+    height: 64px;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 50px;
+}
+
+.nav-links a {
+    color: #cccccc;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.landing {
+    width: 90%;
+    margin: auto;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    animation: drop 1s ease;
+}
+
+.landing-text {
+    color: #cccccc;
+    letter-spacing: 8px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.landing-image {
+    height: 64px;
+}
+
+.landing-image img {
+    height: 100%;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        margin: 0px;
+        padding: 50px;
+        width: 100%;
+    }
+
+    .logo {
+        align-self: flex-start;
+    }
+
+    nav {
+        flex: 1;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: right;
+        gap: 20px;
+    }
+
+    .landing {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .landing-text {
+        font-size: 18px;
+    }
+}
