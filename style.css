@@ -95,7 +95,11 @@ nav {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
+    header {
+        margin: 20px;
+    }
+
     nav {
         margin-left: 20px;
     }
@@ -108,12 +112,16 @@ nav {
         font-size: 18px;
         letter-spacing: 4px;
     }
+
+    .landing-image {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 600px) {
     header {
         margin: 0px;
-        padding: 50px;
+        padding: 20px;
         width: 100%;
     }
 
