@@ -105,7 +105,7 @@ nav {
     }
 
     .nav-links a {
-        font-size: 18px;
+        margin-left: 20px;
     }
 
     .landing-text {
@@ -131,6 +131,10 @@ nav {
 
     nav {
         flex: 1;
+    }
+
+    .nav-links a {
+        font-size: 18px;
     }
 
     .nav-links {
