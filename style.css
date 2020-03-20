@@ -14,6 +14,7 @@ header {
     width: 60%;
     margin: 50px;
     align-items: center;
+    animation: fade 1s ease;
 }
 
 .logo {
@@ -53,7 +54,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: drop 1s ease;
+    animation: drop 2s ease;
 }
 
 .landing-text {
@@ -72,10 +73,20 @@ nav {
     height: 100%;
 }
 
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes drop {
     0% {
         opacity: 0;
-        transform: translateY(-50px);
+        transform: translateY(-100px);
     }
 
     100% {
@@ -85,6 +96,21 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+    nav {
+        margin-left: 20px;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+
+    .landing-text {
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+}
+
+@media screen and (max-width: 600px) {
     header {
         margin: 0px;
         padding: 50px;
@@ -106,15 +132,7 @@ nav {
         justify-content: space-between;
     }
 
-    .nav-links a {
-        font-size: 18px;
-    }
-
     .landing {
         height: 40vh;
-    }
-
-    .landing-text {
-        font-size: 18px;
     }
 }
