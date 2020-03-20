@@ -14,7 +14,6 @@ header {
     width: 60%;
     margin: 50px;
     align-items: center;
-    gap: 50px;
 }
 
 .logo {
@@ -29,13 +28,13 @@ header {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    gap: 50px;
 }
 
 .nav-links a {
     color: #cccccc;
     font-size: 24px;
     text-decoration: none;
+    margin-left: 50px;
 }
 
 .nav-links a:hover {
@@ -50,7 +49,6 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
     animation: drop 1s ease;
 }
 
@@ -63,6 +61,7 @@ header {
 
 .landing-image {
     height: 64px;
+    margin-top: 50px;
 }
 
 .landing-image img {
@@ -81,7 +80,7 @@ header {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     header {
         margin: 0px;
         padding: 50px;
@@ -97,17 +96,16 @@ header {
     }
 
     .nav-links {
+        height: 20vh;
+        min-height: 200px;
         flex-direction: column;
         text-align: right;
-        gap: 20px;
     }
 
     .landing {
         height: 40vh;
     }
-}
 
-@media screen and (max-width: 768px) {
     .landing-text {
         font-size: 18px;
     }
