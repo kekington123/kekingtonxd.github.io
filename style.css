@@ -5,14 +5,15 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-body {
+.landing-screen {
     background: #111119;
+    height: 100vh;
 }
 
 header {
     display: flex;
     width: 60%;
-    margin: 50px;
+    padding: 50px;
     align-items: center;
     animation: fade 1s ease;
 }
@@ -97,7 +98,7 @@ nav {
 
 @media screen and (max-width: 768px) {
     header {
-        margin: 20px;
+        padding: 20px;
     }
 
     nav {
@@ -120,8 +121,6 @@ nav {
 
 @media screen and (max-width: 600px) {
     header {
-        margin: 0px;
-        padding: 20px;
         width: 100%;
     }
 
