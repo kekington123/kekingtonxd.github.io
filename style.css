@@ -5,8 +5,11 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-.landing-screen {
+body {
     background: #111119;
+}
+
+.landing-screen {
     height: 100vh;
 }
 
@@ -130,10 +133,6 @@ nav {
 
     nav {
         flex: 1;
-    }
-
-    .nav-links a {
-        font-size: 18px;
     }
 
     .nav-links {
