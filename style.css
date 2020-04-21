@@ -15,7 +15,7 @@ body {
 
 header {
     display: flex;
-    width: 60%;
+    width: 100%;
     padding: 50px;
     align-items: center;
     animation: fade 1s ease;
@@ -99,17 +99,33 @@ nav {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     header {
         padding: 20px;
     }
 
     nav {
         margin-left: 20px;
+        flex: 1;
+    }
+
+    .logo {
+        align-self: flex-start;
+    }
+
+    .nav-links {
+        height: 200px;
+        flex-direction: column;
+        text-align: right;
+        justify-content: space-between;
     }
 
     .nav-links a {
         margin-left: 20px;
+    }
+
+    .landing {
+        height: 40vh;
     }
 
     .landing-text {
@@ -119,30 +135,5 @@ nav {
 
     .landing-image {
         margin-top: 20px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    header {
-        width: 100%;
-    }
-
-    .logo {
-        align-self: flex-start;
-    }
-
-    nav {
-        flex: 1;
-    }
-
-    .nav-links {
-        height: 150px;
-        flex-direction: column;
-        text-align: right;
-        justify-content: space-between;
-    }
-
-    .landing {
-        height: 40vh;
     }
 }
