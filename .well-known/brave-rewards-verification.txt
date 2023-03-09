@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: kekingtonxd.github.io
-Token: e5c6f246cf5b5d80f21490fa7f5babba97fe23fbfbfc78f01aa76ce7ac91441d
